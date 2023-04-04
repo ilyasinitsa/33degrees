@@ -36,7 +36,7 @@ body {
   padding: 0 1rem;
 }
 .header-wrapper .navigation-links ul li a.active {
-  color: red !important;
+  color: #63A4FF !important;
 }
 
 .main-body .master-slide-wrapper {
@@ -52,10 +52,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .main-body .about-us-wrapper .about-us {
-  background-color: rgba(70, 70, 70, 0.65);
-  color: white;
+  background: white;
+  box-shadow: 5px 5px 0 #aaa;
+  color: black;
 }
 .main-body .about-us-wrapper .about-us .about-us-heading {
+  background: black;
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
@@ -67,7 +70,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #61C3FF;
+  color: #63A4FF;
 }
 
 /*# sourceMappingURL=styles.css.map */

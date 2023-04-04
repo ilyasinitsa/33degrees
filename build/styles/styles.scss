@@ -1,7 +1,8 @@
 $main-font: "Swiss 721 Black Extended BT";
 
 // $main-color: #1f4efe;
-$main-color: #61C3FF;
+// $main-color: #61C3FF;
+$main-color: #63A4FF;
 $dark-color: #001233;
 
 * {
@@ -45,7 +46,7 @@ body {
                 padding: 0 1rem;
 
                 a.active {
-                        color: red!important;
+                        color: $main-color!important;
                 }
             }
         }
@@ -69,10 +70,13 @@ body {
     .about-us-wrapper {
         
         .about-us {
-            background-color: rgba(70, 70, 70, 0.65);
-            color: white;
+            background: white;
+            box-shadow: 5px 5px 0 #aaa;
+            color: black;
             
             .about-us-heading {
+                background: black;
+                color: white;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: bolder;
             }
