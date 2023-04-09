@@ -4,3 +4,17 @@
     font-style: normal;
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "Lato Heavy";
+    src: url("../fonts/lato-heavy.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/lato-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
