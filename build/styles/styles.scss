@@ -28,6 +28,14 @@ p {
     backdrop-filter: blur(12px);
 }
 
+.hidden {
+    display: none!important;
+}
+
+.transparent {
+    opacity: 0!important;
+}
+
 body {
     width: 100%;
     background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/background.jpg');
@@ -39,7 +47,7 @@ body {
 
 .header-wrapper {
     color: #fff;
-    height: 5rem;
+    min-height: 6rem;
     position: absolute;
     top: 0;
     width: 100%;
@@ -50,12 +58,26 @@ body {
         font-family: $main-font;
     }
 
+    &.desktop-compact {
+        position: fixed;
+        animation: header-top 0.2s linear;
+    }
+
     .navigation-links {
         font-family: $title-font;
         font-weight: bold;
         font-size: 1.15rem;
-        
-        ul {
+        gap: 1rem;
+
+        .navigation-links-list {
+            transition: opacity 0.3s;
+            white-space: nowrap;
+
+            &.desktop-compact {
+                background-color: white;
+                color: black;
+                border-radius: 50px;
+            }
 
             li {
                 cursor: pointer;
@@ -87,10 +109,17 @@ body {
                 }
 
                 a.active {
-                    display: inline;
                     color: $main-color!important;
                 }
             }
+        }
+
+        .toggle-button {
+            width: 48px;
+            background: white;
+            border-radius: 50px;
+            color: black;
+            outline: none;
         }
     }
 }
@@ -186,6 +215,14 @@ body {
 .footer-wrapper {
     background: $dark-color;
 
+    .link {
+        transition: color 0.2s ease-in;
+    }
+
+    .link:hover {
+        color: $main-color!important;
+    }
+
     .footer-label-name {
         text-transform: uppercase!important;
         font-family: $title-font!important;
@@ -232,5 +269,14 @@ body {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@keyframes header-top {
+    from {
+        transform: translateY(-6rem);
+    }
+    to {
+        transform: translateY(0);
     }
 }
