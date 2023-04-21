@@ -45,7 +45,22 @@ body {
     background-size: cover;
 }
 
+.mobile-menu {
+    animation: mobile-menu-in 0.75s ease-out;
+    background: $main-color;
+    color: black;
+    font-family: $title-font;
+    font-size: 1.75rem;
+    gap: 1.5rem;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 101;
+}
+
 .header-wrapper {
+    background: linear-gradient(180deg, rgba(0,0,0,0.6), transparent);
     color: #fff;
     min-height: 6rem;
     position: absolute;
@@ -61,6 +76,10 @@ body {
     &.desktop-compact {
         position: fixed;
         animation: header-top 0.2s linear;
+    }
+
+    &.mobile {
+        position: fixed;
     }
 
     .navigation-links {
@@ -115,11 +134,13 @@ body {
         }
 
         .toggle-button {
-            width: 48px;
             background: white;
+            border: none;
             border-radius: 50px;
             color: black;
             outline: none;
+            width: 48px;
+            z-index: 102;
         }
     }
 }
@@ -278,5 +299,14 @@ body {
     }
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes mobile-menu-in {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0);
     }
 }
