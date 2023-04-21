@@ -141,6 +141,28 @@ body {
             outline: none;
             width: 48px;
             z-index: 102;
+
+            .burger {
+                position: absolute;
+                transform: scale(1);
+                transition: transform 0.3s ease-out;
+            }
+
+            .close {
+                position: absolute;
+                transform: scale(0);
+                transition: transform 0.3s ease-out;
+            }
+
+            &.active {
+                .burger {
+                    transform: scale(0);
+                }
+
+                .close {
+                    transform: scale(1);
+                }
+            }
         }
     }
 }

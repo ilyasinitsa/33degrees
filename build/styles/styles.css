@@ -116,6 +116,22 @@ body {
   width: 48px;
   z-index: 102;
 }
+.header-wrapper .navigation-links .toggle-button .burger {
+  position: absolute;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+.header-wrapper .navigation-links .toggle-button .close {
+  position: absolute;
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+}
+.header-wrapper .navigation-links .toggle-button.active .burger {
+  transform: scale(0);
+}
+.header-wrapper .navigation-links .toggle-button.active .close {
+  transform: scale(1);
+}
 
 .main-body .master-slide-wrapper {
   height: 100vh;

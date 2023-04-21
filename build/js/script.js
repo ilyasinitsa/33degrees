@@ -51,6 +51,8 @@ if (window.innerWidth > 992) {
 }
 
 toggleButton.onclick = () => {
+    toggleButton.classList.toggle('active');
+    
     if (!toggleButton.classList.contains('mobile')) {
         navbar.classList.toggle('hidden');
         setTimeout(() => {
