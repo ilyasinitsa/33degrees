@@ -10,7 +10,6 @@ let compact;
 const checkScroll = () => {
 
     let scrolled = window.scrollY;
-    console.log(scrolled)
 
     if (scrolled > header.offsetHeight) {
         header.classList.add('desktop-compact');

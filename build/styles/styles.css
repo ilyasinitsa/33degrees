@@ -35,12 +35,12 @@ body {
 }
 
 .mobile-menu {
-  animation: mobile-menu-in 0.75s ease-out;
-  background: #63A4FF;
-  color: black;
+  animation: mobile-menu-in 0.35s ease-out;
+  background: #202124;
+  color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.75rem;
-  gap: 1.5rem;
+  font-size: 1.5rem;
+  gap: 2rem;
   height: 100vh;
   position: absolute;
   right: 0;
@@ -134,15 +134,30 @@ body {
 }
 
 .main-body .master-slide-wrapper {
+  position: relative;
   height: 100vh;
 }
-.main-body .master-slide-wrapper .master-slide-content {
+.main-body .master-slide-wrapper .swiper {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+}
+.main-body .master-slide-wrapper .swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-body .master-slide-wrapper .master-slide-content-wrapper {
+  position: absolute;
+  z-index: 99;
+}
+.main-body .master-slide-wrapper .master-slide-content-wrapper .master-slide-content {
   color: white;
 }
-.main-body .master-slide-wrapper .master-slide-content h1 {
+.main-body .master-slide-wrapper .master-slide-content-wrapper .master-slide-content h1 {
   font-family: "Swiss 721 Black Extended BT";
 }
-.main-body .master-slide-wrapper .master-slide-content h2 {
+.main-body .master-slide-wrapper .master-slide-content-wrapper .master-slide-content h2 {
   font-family: "Montserrat", sans-serif;
 }
 .main-body .our-studio-wrapper .our-studio .our-studio-content {
@@ -159,7 +174,7 @@ body {
   color: #63A4FF;
 }
 .main-body .our-studio-wrapper .our-studio .our-studio-image img {
-  border-radius: 15px;
+  border-radius: 8px;
   object-fit: cover;
 }
 .main-body .about-us-wrapper .about-us {
@@ -200,7 +215,7 @@ body {
   background: #202124;
 }
 .footer-wrapper .link {
-  transition: color 0.2s ease-in;
+  transition: color 0.15s ease-in;
 }
 .footer-wrapper .link:hover {
   color: #63A4FF !important;

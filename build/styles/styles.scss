@@ -46,12 +46,12 @@ body {
 }
 
 .mobile-menu {
-    animation: mobile-menu-in 0.75s ease-out;
-    background: $main-color;
-    color: black;
+    animation: mobile-menu-in 0.35s ease-out;
+    background: $dark-color;
+    color: white;
     font-family: $title-font;
-    font-size: 1.75rem;
-    gap: 1.5rem;
+    font-size: 1.5rem;
+    gap: 2rem;
     height: 100vh;
     position: absolute;
     right: 0;
@@ -169,15 +169,33 @@ body {
 
 .main-body {
     .master-slide-wrapper {
+        position: relative;
         height: 100vh;
-        
-        .master-slide-content {
-            color: white;
-            h1 {
-                font-family: $main-font;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.7);
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
-            h2 {
-                font-family: $title-font;
+        }
+
+        .master-slide-content-wrapper {
+            position: absolute;
+            z-index: 99;
+
+            .master-slide-content {
+                color: white;
+                h1 {
+                    font-family: $main-font;
+                }
+                h2 {
+                    font-family: $title-font;
+                }
             }
         }
     }
@@ -200,7 +218,7 @@ body {
             }
             .our-studio-image {
                 img {
-                    border-radius: 15px;
+                    border-radius: 8px;
                     object-fit: cover;
                 }
             }
@@ -259,7 +277,7 @@ body {
     background: $dark-color;
 
     .link {
-        transition: color 0.2s ease-in;
+        transition: color 0.15s ease-in;
     }
 
     .link:hover {
