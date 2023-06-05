@@ -33,6 +33,7 @@ const checkScroll = () => {
             compact = false;
         }
 
+        toggleButton.classList.remove('active');
         toggleButton.classList.add('hidden');
     }  
 }
