@@ -39,6 +39,40 @@ p {
     opacity: 0!important;
 }
 
+.heading-black {
+    display: inline-block;
+    background: black;
+    color: white;
+    font-family: $title-font;
+    font-weight: bolder;
+}
+
+.heading-white {
+    display: inline-block;
+    background: white;
+    color: black;
+    font-family: $title-font;
+    font-weight: bolder;
+}
+
+.heading-border-black {
+    display: inline-block;
+    background: none;
+    color: black;
+    border: 0.5rem solid;
+    font-family: $title-font;
+    font-weight: bolder;
+}
+
+.heading-border-white {
+    display: inline-block;
+    background: none;
+    color: white;
+    border: 0.5rem solid;
+    font-family: $title-font;
+    font-weight: bolder;
+}
+
 body {
     width: 100%;
     // background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/background.jpg');
@@ -204,8 +238,8 @@ body::before {
             height: 2rem;
             position: absolute;
             bottom: 2rem;
-            z-index: 100;
-
+            z-index: 99;
+            
             .polygon {
                 height: 0.8rem;
                 width: 100%;
@@ -410,15 +444,49 @@ body::before {
         }
     }
     .about-studio-wrapper {
-        .about-studio-heading {
-            display: inline-block;
-            background: black;
-            color: white;
-            font-family: $title-font;
-            font-weight: bolder;
-        }
         .about-studio-description {
-            font-size: 1.15em;
+            font-size: 1.25em;
+
+            p {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .studio-gear-wrapper {
+        .studio-gear {
+            .col {
+                
+                .gear-card{
+                    height: 100%;
+                    background: white;
+                    border-radius: 1rem;
+                    gap: 1rem;
+                    font-size: 1.2rem;
+    
+                    img {
+                        background-color: #63A4FF;
+                        border-radius: 0.5rem;
+                        padding: 1rem;
+                        height: fit-content;
+                        width: 12.5%;
+                        box-sizing: content-box;
+                    }
+                    .gear-card-content {
+                        gap: 0.5rem;
+    
+                        .gear-category {
+                            line-height: 1rem;
+                            color: rgba(0,0,0,0.75);
+                        }
+    
+                        .gear-models {
+                            line-height: 1rem;
+                            font-family: $title-font;
+                            gap: 0.5rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
