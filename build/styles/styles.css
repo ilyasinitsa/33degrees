@@ -189,6 +189,7 @@ body::before {
 .main-body .master-slide-wrapper {
   position: relative;
   height: 100vh;
+  height: 100dvh;
 }
 .main-body .master-slide-wrapper .scroll-down-link {
   display: flex;
