@@ -390,6 +390,33 @@ body::before {
   background: white;
 }
 
+.services-main-body {
+  padding-top: 80px;
+}
+.services-main-body .service-wrapper .service-card .service-image {
+  object-fit: cover;
+}
+.services-main-body .service-wrapper .service-card .service-content {
+  gap: 1.5rem;
+}
+.services-main-body .service-wrapper .service-card .service-content .service-description {
+  font-size: 2rem;
+}
+.services-main-body .service-wrapper .service-card .service-content .service-price {
+  align-self: flex-end;
+  font-size: 3rem;
+  font-family: "Swiss 721 Black Extended BT", "Montserrat", sans-serif;
+}
+.services-main-body .service-wrapper:nth-child(even) .service-card {
+  flex-direction: row-reverse;
+}
+.services-main-body .service-wrapper:nth-child(even) .service-card .service-content .service-heading {
+  align-self: flex-end;
+}
+.services-main-body .service-wrapper:nth-child(even) .service-card .service-content .service-price {
+  align-self: flex-start;
+}
+
 @keyframes fade-in {
   from {
     transform: translateX(-100px);

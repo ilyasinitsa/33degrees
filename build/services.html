@@ -16,22 +16,24 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <style>
         @media (max-width: 992px) {
-            .studio-main-body {
+            .services-main-body {
                 padding-top: 68px!important;
-            }
-            .about-studio-header {
-                font-size: 1.3rem!important;
-            }
-            .gear-card {
-                font-size: 1rem !important;
             }
         }
         @media (max-width: 576px) {
-            .studio-gear-heading {
+            .service-heading {
+                align-self: center!important;
                 font-size: 1.9rem;
             }
-            .studio-slider {
-                height: auto!important;
+            .service-heading > span {
+                border: 0.4rem solid black!important;
+            }
+            .service-description {
+                font-size: 1.25rem!important;
+            }
+            .service-price {
+                align-self: flex-end!important;
+                font-size: 2rem !important;
             }
         }
     </style>
@@ -46,8 +48,8 @@
             <nav class="navigation-links d-flex align-items-center">
                 <ul class="navigation-links-list list-inline m-0 d-flex align-items-center">
                     <li class="list-inline-item"><a href="index.html" class="text-decoration-none text-reset">Главная</a></li>
-                    <li class="list-inline-item"><a href="services.html" class="text-decoration-none text-reset">Услуги и цены</a></li>
-                    <li class="list-inline-item"><a href="studio.html" class="text-decoration-none text-reset active">Наша студия</a></li>
+                    <li class="list-inline-item"><a href="services.html" class="text-decoration-none text-reset active">Услуги и цены</a></li>
+                    <li class="list-inline-item"><a href="studio.html" class="text-decoration-none text-reset">Наша студия</a></li>
                     <li class="list-inline-item"><a href="" class="text-decoration-none text-reset">О нас</a></li>
                 </ul>
                 <button class="toggle-button hidden h-100 d-flex align-items-center justify-content-center">
@@ -64,98 +66,161 @@
         </div>
     </header>
 
-    <main class="studio-main-body">
-        <article class="about-studio-wrapper glassmorphism w-100 my-5">
-            <div class="row m-0">
-                <div class="col-12 col-lg-6 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="img-fluid"></div>
-                <div class="col-12 col-lg-6 px-4 py-3">
-                    <p><span class="about-studio-heading display-5 p-1 text-uppercase heading-black">О нашей студии</span></p>
-                    <div class="about-studio-description sub-text text-white">
+    <main class="services-main-body">
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
                         </p>
                         <p>
                             Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
                         </p>
-                        <p>
+                        <p class="mb-0">
                             Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
                         </p>
                     </div>
-                </div>
-            </div>
-        </article>
-        <article class="studio-gear-wrapper py-4 mb-5 glassmorphism">
-            <div class="container studio-gear px-4">
-                <p class="d-flex justify-content-center mb-5"><span class="studio-gear-heading display-5 p-2 text-uppercase text-center heading-border-white">Наше оборудование</span></p>
-                <div class="row gy-4 row-cols-1 row-cols-lg-2">
-                    <div class="col">
-                        <div class="gear-card d-flex flex-row align-items-center p-4">
-                            <img class="img-fluid" src="img/icons/headphone-line.svg" alt="">
-                            <div class="gear-card-content d-flex flex-column justify-content-center">
-                                <span class="gear-category">Наушники</span>
-                                <div class="gear-models d-flex flex-column">
-                                    <span>Sennheiser HD 280 Pro</span>
-                                    <span>Audio-Technica ATH-M20x</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="gear-card d-flex flex-row align-items-center p-4">
-                            <img class="img-fluid" src="img/icons/cpu-line.svg" alt="">
-                            <div class="gear-card-content d-flex flex-column justify-content-center">
-                                <span class="gear-category">Звуковая карта</span>
-                                <div class="gear-models d-flex flex-column">
-                                    <span>Focusrite Scarlett 8i6</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="gear-card d-flex flex-row align-items-center p-4">
-                            <img class="img-fluid" src="img/icons/mic-2-line.svg" alt="">
-                            <div class="gear-card-content d-flex flex-column justify-content-center">
-                                <span class="gear-category">Микрофон</span>
-                                <div class="gear-models d-flex flex-column">
-                                    <span>Rode NT1-Kit</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="gear-card d-flex flex-row align-items-center p-4">
-                            <img class="img-fluid" src="img/icons/speaker-3-line.svg" alt="">
-                            <div class="gear-card-content d-flex flex-column justify-content-center">
-                                <span class="gear-category">Студийные мониторы</span>
-                                <div class="gear-models d-flex flex-column">
-                                    <span>Yamaha HS7</span>
-                                    <span>JBL 305P</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
                     </div>
                 </div>
             </div>
         </article>
-        <div class="glassmorphism w-100">
-            <!-- Slider main container -->
-            <div class="studio-slider w-100">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/IMG_2255_1.jpg" loading="lazy"></div>
-                    <div class="swiper-slide"><img src="img/IMG_2270_1.jpg" loading="lazy"></div>
-                    <div class="swiper-slide"><img src="img/IMG_2272_1.jpg" loading="lazy"></div>
-                    <div class="swiper-slide"><img src="img/IMG_5323_1.jpg" loading="lazy"></div>
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
+                        </p>
+                        <p>
+                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
+                        </p>
+                        <p class="mb-0">
+                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
+                        </p>
+                    </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
+                    </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination pb-3"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev ps-sm-5"></div>
-                <div class="swiper-button-next pe-sm-5"></div>
             </div>
-        </div>
+        </article>
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
+                        </p>
+                        <p>
+                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
+                        </p>
+                        <p class="mb-0">
+                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
+                        </p>
+                    </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
+                        </p>
+                        <p>
+                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
+                        </p>
+                        <p class="mb-0">
+                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
+                        </p>
+                    </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
+                        </p>
+                        <p>
+                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
+                        </p>
+                        <p class="mb-0">
+                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
+                        </p>
+                    </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
+                        </p>
+                        <p>
+                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
+                        </p>
+                        <p class="mb-0">
+                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
+                        </p>
+                    </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="service-wrapper w-100 bg-white my-5">
+            <div class="service-card row m-0">
+                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
+                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
+                    <div class="service-description sub-text">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
+                        </p>
+                        <p>
+                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
+                        </p>
+                        <p class="mb-0">
+                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
+                        </p>
+                    </div>
+                    <div class="service-price">
+                        <span class="text-uppercase">75,00 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
 
     <footer class="footer-wrapper w-100">

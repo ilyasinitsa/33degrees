@@ -490,6 +490,52 @@ body::before {
     }
 }
 
+.services-main-body {
+    padding-top: 80px;
+
+    .service-wrapper {
+        .service-card {
+            
+            .service-image {
+                object-fit: cover;
+            }
+
+            .service-content {
+                gap: 1.5rem;
+
+                .service-description {
+                    font-size: 2rem;
+                }
+
+                .service-price {
+                    align-self: flex-end;
+                    font-size: 3rem;
+                    font-family: $main-font, $title-font;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+
+            .service-card {
+
+                flex-direction: row-reverse;
+
+                .service-content {
+
+                    .service-heading {
+                        align-self: flex-end;
+                    }
+                    .service-price {
+                        align-self: flex-start;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
 @keyframes fade-in {
     from {
         transform: translateX(-100px);

@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
 
 const studioSwiper = new Swiper('.studio-slider', {
     loop: true,
-    speed: 1000,
+    speed: 500,
     pagination: {
         el: '.swiper-pagination',
     },
