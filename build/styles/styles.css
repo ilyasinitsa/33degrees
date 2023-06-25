@@ -9,7 +9,7 @@ p {
 
 .sub-text {
   font-family: "Lato Regular", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 .glassmorphism {
@@ -342,7 +342,7 @@ body::before {
   padding-top: 80px;
 }
 .studio-main-body .about-studio-wrapper .about-studio-description {
-  font-size: 1.25em;
+  font-size: 1.5rem;
 }
 .studio-main-body .about-studio-wrapper .about-studio-description p {
   margin-bottom: 1.5rem;
@@ -393,14 +393,19 @@ body::before {
 .services-main-body {
   padding-top: 80px;
 }
-.services-main-body .service-wrapper .service-card .service-image {
+.services-main-body .service-wrapper .service-card .service-image-wrapper {
+  position: relative;
+}
+.services-main-body .service-wrapper .service-card .service-image-wrapper .service-image {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .services-main-body .service-wrapper .service-card .service-content {
   gap: 1.5rem;
 }
 .services-main-body .service-wrapper .service-card .service-content .service-description {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .services-main-body .service-wrapper .service-card .service-content .service-price {
   align-self: flex-end;
@@ -415,6 +420,46 @@ body::before {
 }
 .services-main-body .service-wrapper:nth-child(even) .service-card .service-content .service-price {
   align-self: flex-start;
+}
+
+.about-us-main-body {
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+.about-us-main-body .about-us-wrapper .about-us-description {
+  font-family: "Lato Regular", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+}
+.about-us-main-body .about-us-wrapper .about-us-video {
+  aspect-ratio: 16/9;
+}
+.about-us-main-body .about-us-map-wrapper {
+  background: #202124;
+}
+.about-us-main-body .about-us-map-wrapper .about-us-contacts .contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #6c757d;
+  font-family: "Lato Regular", sans-serif;
+}
+.about-us-main-body .about-us-map-wrapper .about-us-contacts .contact-card p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.about-us-main-body .about-us-map-wrapper .about-us-contacts .contact-card p:nth-of-type(1) {
+  font-family: "Montserrat", sans-serif !important;
+}
+.about-us-main-body .about-us-map-wrapper .about-us-contacts .contact-card svg {
+  box-sizing: content-box;
+  padding: 1.5rem;
+  border: 0.2rem solid white;
+  border-radius: 100%;
+  width: 4rem;
 }
 
 @keyframes fade-in {

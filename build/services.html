@@ -35,9 +35,22 @@
                 align-self: flex-end!important;
                 font-size: 2rem !important;
             }
+            .service-image-wrapper::after {
+                content: "";
+                height: 25%;
+                width: 100%;
+                background: linear-gradient(
+                    180deg,
+                    hsla(0, 0%, 100%, 0) 0%,
+                    hsl(0, 0%, 100%) 100%
+                );
+                position: absolute;
+                display: block;
+                bottom: 0;
+            }
         }
     </style>
-    <title>Наша студия</title>
+    <title>Услуги и цены</title>
 </head>
 <body>
     <header class="header-wrapper d-flex flex-row align-items-center py-3 position-absolute">
@@ -50,7 +63,7 @@
                     <li class="list-inline-item"><a href="index.html" class="text-decoration-none text-reset">Главная</a></li>
                     <li class="list-inline-item"><a href="services.html" class="text-decoration-none text-reset active">Услуги и цены</a></li>
                     <li class="list-inline-item"><a href="studio.html" class="text-decoration-none text-reset">Наша студия</a></li>
-                    <li class="list-inline-item"><a href="" class="text-decoration-none text-reset">О нас</a></li>
+                    <li class="list-inline-item"><a href="about.html" class="text-decoration-none text-reset">О нас</a></li>
                 </ul>
                 <button class="toggle-button hidden h-100 d-flex align-items-center justify-content-center">
                     <svg class="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
@@ -61,15 +74,18 @@
                 <a href="index.html" class="text-decoration-none text-reset active">Главная</a>
                 <a href="services.html" class="text-decoration-none text-reset">Услуги и цены</a>
                 <a href="studio.html" class="text-decoration-none text-reset">Наша студия</a>
-                <a href="" class="text-decoration-none text-reset">О нас</a>
+                <a href="about.html" class="text-decoration-none text-reset">О нас</a>
             </nav>
         </div>
     </header>
 
     <main class="services-main-body">
+        <div class="d-flex w-100 justify-content-center my-5">
+            <span class="heading-border-white display-5 text-uppercase">Наши услуги</span>
+        </div>
         <article class="service-wrapper w-100 bg-white my-5">
             <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-image-wrapper col-12 col-lg-5 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="service-image "></div>
                 <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
                     <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
                     <div class="service-description sub-text">
@@ -91,7 +107,7 @@
         </article>
         <article class="service-wrapper w-100 bg-white my-5">
             <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-image-wrapper col-12 col-lg-5 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="service-image "></div>
                 <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
                     <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
                     <div class="service-description sub-text">
@@ -113,7 +129,7 @@
         </article>
         <article class="service-wrapper w-100 bg-white my-5">
             <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-image-wrapper col-12 col-lg-5 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="service-image "></div>
                 <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
                     <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
                     <div class="service-description sub-text">
@@ -135,7 +151,7 @@
         </article>
         <article class="service-wrapper w-100 bg-white my-5">
             <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-image-wrapper col-12 col-lg-5 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="service-image "></div>
                 <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
                     <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
                     <div class="service-description sub-text">
@@ -157,7 +173,7 @@
         </article>
         <article class="service-wrapper w-100 bg-white my-5">
             <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-image-wrapper col-12 col-lg-5 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="service-image "></div>
                 <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
                     <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
                     <div class="service-description sub-text">
@@ -179,7 +195,7 @@
         </article>
         <article class="service-wrapper w-100 bg-white my-5">
             <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
+                <div class="service-image-wrapper col-12 col-lg-5 p-0"><img src="img/IMG_2255_1.jpg" alt="" class="service-image "></div>
                 <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
                     <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
                     <div class="service-description sub-text">
@@ -199,28 +215,7 @@
                 </div>
             </div>
         </article>
-        <article class="service-wrapper w-100 bg-white my-5">
-            <div class="service-card row m-0">
-                <img src="img/IMG_2255_1.jpg" alt="" class="service-image col-12 col-lg-5 p-0">
-                <div class="service-content col-12 col-lg-7 px-3 px-md-5 py-4 d-flex flex-column ">
-                    <p class="m-0 service-heading"><span class="display-5 p-1 text-uppercase heading-border-black">Запись</span></p>
-                    <div class="service-description sub-text">
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia nihil rerum consectetur atque pariatur!
-                        </p>
-                        <p>
-                            Asperiores placeat eaque facere. Incidunt amet doloremque dignissimos in, reiciendis repellat rem tempora tenetur esse.
-                        </p>
-                        <p class="mb-0">
-                            Sint, eligendi! Consequuntur ipsa perferendis, libero nostrum, aliquam corrupti fugiat doloremque quaerat sunt quos soluta?
-                        </p>
-                    </div>
-                    <div class="service-price">
-                        <span class="text-uppercase">75,00 руб.</span>
-                    </div>
-                </div>
-            </div>
-        </article>
+
     </main>
 
     <footer class="footer-wrapper w-100">
@@ -236,7 +231,7 @@
                     <p><a href="index.html" class="footer-link link text-decoration-none text-secondary">Главная</a></p>
                     <p><a href="services.html" class="footer-link link text-decoration-none text-secondary">Услуги и цены</a></p>
                     <p><a href="studio.html" class="footer-link link text-decoration-none text-secondary">Наша студия</a></p>
-                    <p class="mb-0"><a href="" class="footer-link link text-decoration-none text-secondary">О нас</a></p>
+                    <p class="mb-0"><a href="about.html" class="footer-link link text-decoration-none text-secondary">О нас</a></p>
                 </div>
                 <div class="footer-contacts col-md-3 mb-5 mb-md-0 text-secondary">
                     <p class="footer-label-name"><b class="text-white">Моб. телефон</b></p>
